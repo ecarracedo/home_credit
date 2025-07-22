@@ -4,6 +4,5 @@ __pycache__/
 *.pyc   
 *.pyo
 *.pyd
-*.pkl
 data/data_train.csv
 data/data_train_new.csv
