@@ -178,8 +178,8 @@ def generar_campos_entrada(artefactos):
 
                             elif feature == 'NAME_FAMILY_STATUS':
                                 family_status_options = [
-                                    'Widow','Married','Single',
-                                    'Civil marriage', 'Separated', 'Unknown'
+                                    'Married','Single',
+                                    'Civil marriage', 'Separated', 'Widow','Unknown'
                                 ]
                                 
                                 input_data[feature] = st.selectbox(
@@ -265,7 +265,7 @@ def mostrar_resultados(probabilidad):
     riesgo = probabilidad * 100
     st.progress(int(riesgo))
     st.caption(f"Nivel de riesgo: {riesgo:.1f}%")
-    
+
     # Recomendación
     st.subheader("📌 Recomendación")
     if riesgo < 25:
